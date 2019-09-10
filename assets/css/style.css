@@ -183,7 +183,8 @@ footer {
 	padding: 0;
 }
 
-.info__creditos {
+.info__creditos,
+.info__creditos a {
 	font-size: 16px;
 	font-weight: 500;
 	color: #BBBBBB;
