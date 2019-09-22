@@ -1,324 +1,1573 @@
+<!-- CÓDIGO FEITO POR LUIZ GUILHERME SILVA PARA TESTE DE VAGA DE DESENVOLVEDOR FRONT-END DO INSTITUTO DA CIDADE INTELIGENTE -->
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<meta id="viewport" name="viewport" content="width=device-width, user-scalable=no" />
-		<title>Tributo - Von Neumann</title>
+		<title>Landing Page - ICI</title>
+
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
 	</head>
 	<body>
-		<header class="centralizar">
-			<div class="area-util">
-				<div class="centralizar tributo">
-					<div class="tributo__title">
-						John Von Neumann
+		<header>
+			<div class="container-fluid">
+				<div class="row align-items-center justify-content-center area-topo fundo-verde">
+					<div class="col area-logo">
+						<div id="carouselImagensHeader" class="carousel slide" data-ride="carousel">
+						  	<ol class="carousel-indicators">
+						    	<li data-target="#carouselImagensHeader" data-slide-to="0" data-interval="10000" class="active"></li>
+						    	<li data-target="#carouselImagensHeader" data-slide-to="1" data-interval="5000"></li>
+						    	<li data-target="#carouselImagensHeader" data-slide-to="2" data-interval="5000"></li>
+						    	<li data-target="#carouselImagensHeader" data-slide-to="3" data-interval="5000"></li>
+						    	<li data-target="#carouselImagensHeader" data-slide-to="4" data-interval="5000"></li>
+						  	</ol>
+						  	<div class="carousel-inner">
+						    	<div class="carousel-item active" data-bg-img="./assets/images/topo_0.jpg">
+						      		<a href="#conteudo">
+						      			<img src="./assets/images/logo_movel.jpg" class="d-block w-100">
+						      		</a>
+						    	</div>
+						    	<div class="carousel-item" data-bg-img="./assets/images/topo_1.jpg">
+						    		<a href="#conteudo">
+							      		<img src="./assets/images/topo_1.jpg" class="d-block w-100 img-secundaria">
+						      			<div class="carousel-caption d-none d-md-block">
+								          <h4>Melhorias na educação</h4>
+								        </div>
+					    		</div>
+						    	<div class="carousel-item" data-bg-img="./assets/images/topo_2.jpg">
+						    		<a href="#conteudo">
+							      		<img src="./assets/images/topo_2.jpg" class="d-block w-100 img-secundaria">
+						      			<div class="carousel-caption d-none d-md-block">
+								          <h4>Melhorias na Saúde</h4>
+								        </div>
+								    </a>	
+						    	</div>
+						    	<div class="carousel-item" data-bg-img="./assets/images/topo_3.jpg">
+						    		<a href="#conteudo">
+							      		<img src="./assets/images/topo_3.jpg" class="d-block w-100 img-secundaria">
+						      			<div class="carousel-caption d-none d-md-block">
+								          <h4>Melhorias na infraestrutura</h4>
+								        </div>
+								    </a>	
+						    	</div>
+						    	<div class="carousel-item" data-bg-img="./assets/images/topo_4.jpg">
+						    		<a href="#conteudo">
+							      		<img src="./assets/images/topo_4.jpg" class="d-block w-100 img-secundaria">
+						      			<div class="carousel-caption d-none d-md-block">
+								          <h4>Melhorias no turismo</h4>
+								        </div>
+								    </a>	
+						    	</div>
+						  	</div>
+						</div>
 					</div>
-					<div class="tributo__subtitle">
-						Matemático
+				</div>
+				<div class="row align-items-center justify-content-center fundo-verde">
+					<div class="col-7 m-3">
+						<h4 class="text-center text-white">MELHOR EM <strong>SAÚDE</strong>. MELHOR EM <strong>MOBILIDADE</strong>. MELHOR EM <strong>EDUCAÇÃO</strong>. <strong class="texto-destaque">CURITIBA AVANÇA EM TODAS AS ÁREAS.</strong></h4>
 					</div>
 				</div>
 			</div>
 		</header>
-		<section class="centralizar">
-			<div class="area-util centralizar">
-				<div class="image-area">
-					<img src="./assets/images/JohnvonNeumann.png" />
-					<div class="image-area__foot-note">
-						John Von Neumann
+
+		<section id="conteudo">
+			<div class="container-fluid">
+				<div class="row justify-content-center">
+					<div class="col-9 area-noticias">
+						<div class="accordion" id="expandable-cards">
+							<div class="row justify-content-between area-noticias__principais py-4">
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+									  	<div class="card">
+									    	<div class="card-header" id="heading1">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Saúde
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">As farmácias, que estavam vazias, foram reabastecidas, acabaram as filas de espera para exames laboratoriais e o aplicativo Saúde Já permite a marcação do primeiro atendimento com enfermagem e com odontologia.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_0">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+									  	<div class="card">
+									    	<div class="card-header" id="heading2">
+									    		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Educação
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">Educação e inovação agora andam juntas. Os curitibinhas contam com Farol do Saber e Inovação, parceria com a Google Educação e aulas de campo do Linhas do Conhecimento.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_1">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+									  	<div class="card">
+									    	<div class="card-header" id="heading3">
+									    		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Finanças
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">2017 começou com a cidade mergulhada na maior crise da sua história, mas termina com bons resultados alcançados e a certeza de que Curitiba é maior que seus desafios.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_2">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+									  	<div class="card">
+									    	<div class="card-header" id="heading4">
+									    		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Zeladoria Municipal
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">A cidade voltou a ser bem cuidada em todos os bairros. Agora tem equipes nas ruas, fazendo a recuperação do asfalto, de praças, de parques e de calçadas.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_3">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+									  	<div class="card">
+									    	<div class="card-header" id="heading5">
+									    		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Obras
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">Obras paralisadas na gestão anterior foram retomadas, muitas foram concluídas e outras novas iniciadas.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_4">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+									  	<div class="card">
+									    	<div class="card-header" id="heading6">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Governo Municipal
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">Curitiba retomou o diálogo institucional e as parcerias com governos, órgãos financiadores e demais poderes. Os resultados já apareceram.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_5">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+									  	<div class="card">
+									    	<div class="card-header" id="heading7">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Ação Social
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">Novas vagas para o atendimento especializado à população de rua e trabalho intensificado de abordagem social em todos os bairros da cidade.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_6">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+									  	<div class="card">
+									    	<div class="card-header" id="heading8">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Abastecimento
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">Aumentou em 30 mil o número de famílias beneficiadas com o programa Armazém da Família, que agora tem mais de 30 novos itens acrescentados na linha de produtos.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_7">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+									  	<div class="card">
+									    	<div class="card-header" id="heading9">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Habitação
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">Obras que haviam sido paralisadas na gestão anterior foram retomadas, muitas foram concluídas e outras novas e importantes ao desenvolvimento da cidade foram iniciadas.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_8">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+									  	<div class="card">
+									    	<div class="card-header" id="heading10">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Cidadania
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">Ouvir a população, acatar as sugestões, ser transparente, prestar contas, oferecer serviços de qualidade e lutar por direitos iguais a todos. O respeito aos moradores de Curitiba voltou.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_9">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
+									  	<div class="card">
+									    	<div class="card-header" id="heading11">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Meio Ambiente
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">Parques, praças e jardinetes voltaram a receber manutenção, estão bem cuidados e devolvidos ao convívio e ao lazer dos curitibanos.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_10">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
+									  	<div class="card">
+									    	<div class="card-header" id="heading12">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Cultura
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">A promoção e o incentivo da cultura local foram prioridades da área neste ano e Curitiba voltou a contar com grandes eventos do calendário cultural da cidade.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_11">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="true" aria-controls="collapse13">
+									  	<div class="card">
+									    	<div class="card-header" id="heading13">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Defesa Social
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">Mais guardas municipais estão nas ruas, nos parques e garantindo a segurança no transporte coletivo.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_12">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse14" aria-expanded="true" aria-controls="collapse14">
+									  	<div class="card">
+									    	<div class="card-header" id="heading14">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Transporte
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">Curitiba voltou a ter transporte integrado com a Região Metropolitana e a frota de ônibus começará a ser renovada.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_13">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse15" aria-expanded="true" aria-controls="collapse15">
+									  	<div class="card">
+									    	<div class="card-header" id="heading15">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			IPPUC
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">A cidade voltou a se planejar, criando novos projetos pra resolver a mobilidade, a urbanização e o melhor uso do solo e do zoneamento.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_14">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse16" aria-expanded="true" aria-controls="collapse16">
+									  	<div class="card">
+									    	<div class="card-header" id="heading16">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Urbanismo
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white"></p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_15">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse17" aria-expanded="true" aria-controls="collapse17">
+									  	<div class="card">
+									    	<div class="card-header" id="heading17">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Esporte e Lazer
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse17" class="collapse" aria-labelledby="heading17" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white"></p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_16">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse18" aria-expanded="true" aria-controls="collapse18">
+									  	<div class="card">
+									    	<div class="card-header" id="heading18">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			IMAP
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse18" class="collapse" aria-labelledby="heading18" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white"></p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_17">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse19" aria-expanded="true" aria-controls="collapse19">
+									  	<div class="card">
+									    	<div class="card-header" id="heading19">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Relações Internacionais
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse19" class="collapse" aria-labelledby="heading19" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white"></p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_18">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse20" aria-expanded="true" aria-controls="collapse20">
+									  	<div class="card">
+									    	<div class="card-header" id="heading20">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Turismo
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse20" class="collapse" aria-labelledby="heading20" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">Curitiba voltou a investir em eventos turísticos. Também está apoiando ações promocionais, como o CuritiBera e o Natal Luz dos Pinhais.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_19">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse21" aria-expanded="true" aria-controls="collapse21">
+									  	<div class="card">
+									    	<div class="card-header" id="heading21">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Agência Curitiba
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse21" class="collapse" aria-labelledby="heading21" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">Redesenhada, ampliou a área de atuação e implantou o Engenho da Inovação e o programa Vale do Pinhão e em pouco tempo, a cidade se tornou uma das mais empreendedoras do Brasil.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_20">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse22" aria-expanded="true" aria-controls="collapse22">
+									  	<div class="card">
+									    	<div class="card-header" id="heading22">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Administração
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse22" class="collapse" aria-labelledby="heading22" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white">A reestruturação administrativa da prefeitura foi colocada em prática. Foram reduzidos gastos com aluguéis desnecessários e feita a reforma da estrutura administrativa da cidade.</p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_21">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse23" aria-expanded="true" aria-controls="collapse23">
+									  	<div class="card">
+									    	<div class="card-header" id="heading23">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			IPMC
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse23" class="collapse" aria-labelledby="headine23" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white"></p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_22">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+								<div class="col-12 col-md-6 p-2">
+									<a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse24" aria-expanded="true" aria-controls="collapse24">
+									  	<div class="card">
+									    	<div class="card-header" id="heading24">
+									      		<div class="row justify-content-between align-items-center">
+									      			<h4 class="text-white font-weight-bold text-uppercase ml-2 mb-0">
+									          			Curitiba S/A
+										      		</h4>
+										      		<i class="fas fa-plus mr-2"></i>
+									      		</div>
+									    	</div>
+
+									    	<div id="collapse24" class="collapse" aria-labelledby="heading24" data-parent="#expandable-cards">
+									      		<div class="card-body">
+									        		<p class="text-white"></p>
+									        		<div class="row justify-content-center py-3">
+									        			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalDetalhes_23">Mais Detalhes</button>
+									        		</div>
+									      		</div>
+									    	</div>
+									  	</div>
+								  	</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="centralizar">
-			<div class="area-util centralizar">
-				<div class="resumo">
-					John von Neumann, nascido Margittai Neumann János Lajos (Budapeste, 28 de dezembro de 1903 — Washington, D.C., 8 de fevereiro de 1957) foi um matemático húngaro de origem judaica, naturalizado estadunidense.
-					<br />
-					<br />
-					Contribuiu na teoria dos conjuntos, análise funcional, teoria ergódica, mecânica quântica, ciência da computação, economia, teoria dos jogos, análise numérica, hidrodinâmica das explosões, estatística e muitas outras as áreas da matemática. De fato é considerado um dos mais importantes matemáticos do século XX.[2]
-					<br />
-					<br />
-					Foi membro do Instituto de Estudos Avançados de Princeton, Nova Jérsei, do qual também faziam parte Albert Einstein e Erwin Panofsky, quando emigraram para os Estados Unidos, além de Kurt Gödel, Robert Oppenheimer, George F. Kennan e Hermann Weyl. Com Edward Teller e Stanisław Ulam, von Neumann trabalhou em desenvolvimentos chave da Física Nuclear, relacionados com reações termonucleares e com a bomba de hidrogênio. Participou também do Projeto Manhattan, responsável pelo desenvolvimento das primeiras bombas atômicas.
-					<br />
-					<br />
-					Foi professor na Universidade de Princeton e um dos construtores do ENIAC. Entre os anos de 1946 e 1953, von Neumann integrou o grupo reunido sob o nome de Macy Conferences, contribuindo para a consolidação da teoria cibernética junto com outros cientistas renomados: Gregory Bateson, Heinz von Foerster, Kurt Lewin, Margaret Mead, Norbert Wiener, Paul Lazarsfeld, William Ross Ashby, Claude Shannon, Erik Erikson e Max Delbrück, entre outros. Von Neumann faleceu pouco depois, aos 53 anos, vítima de um tumor cerebral. 
-				</div>
-			</div>
-		</section>
-		<section class="centralizar">
-			<div class="area-util centralizar">
-				<div class="timeline">
-					<div class="timeline__detalhes esquerda">
-						<div class="timeline__item">
-							<div class="data">
-								28/12/1903
-							</div>
-							<div class="texto">
-								Nascimento de Von Neumann
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								18/04/1925
-							</div>
-							<div class="texto">
-								Diplomado em Engenharia Química
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								18/07/1925
-							</div>
-							<div class="texto">
-								Uma axiomatização da teoria dos conjuntos
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								18/04/1926
-							</div>
-							<div class="texto">
-								Doutorado em Matemática
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								18/04/1928
-							</div>
-							<div class="texto">
-								Teoria dos jogos de salão
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								27/10/1932
-							</div>
-							<div class="texto">
-								Sobre certas equações da economia e uma generalização do teorema de ponto fixo de Brouwer
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								20/07/1933
-							</div>
-							<div class="texto">
-								Professor na IAS(Instituto para Estudos Avançados)
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								19/03/1940
-							</div>
-							<div class="texto">
-								Álgebras de Von Neumann
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								29/09/1943
-							</div>
-							<div class="texto">
-								Projeto Manhattan(2ª Guerra Mundial)
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								27/01/1944
-							</div>
-							<div class="texto">
-								Contribuições ao ENIAC
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								27/01/1946
-							</div>
-							<div class="texto">
-								Melhoria dos métodos e meios de utilização da energia nuclear
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								15/01/1950
-							</div>
-							<div class="texto">
-								Consultor da WSEG(Grupo de Avaliação de Sistemas de Armas)
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								27/01/1954
-							</div>
-							<div class="texto">
-								Arquiteto da comissão de energia atômica
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								28/07/1956
-							</div>
-							<div class="texto">
-								Medalha da liberdade e prêmios
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								08/02/1957
-							</div>
-							<div class="texto">
-								Morte de Von Neumann
-							</div>
-						</div>
-					</div>
-					<div class="timeline__linha"></div>
-					<div class="timeline__detalhes direita">
-						<div class="timeline__item">
-							<div class="data">
-								28/12/1903
-							</div>
-							<div class="texto">
-								Nascimento de Von Neumann
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								18/04/1925
-							</div>
-							<div class="texto">
-								Diplomado em Engenharia Química
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								18/07/1925
-							</div>
-							<div class="texto">
-								Uma axiomatização da teoria dos conjuntos
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								18/04/1926
-							</div>
-							<div class="texto">
-								Doutorado em Matemática
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								18/04/1928
-							</div>
-							<div class="texto">
-								Teoria dos jogos de salão
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								27/10/1932
-							</div>
-							<div class="texto">
-								Sobre certas equações da economia e uma generalização do teorema de ponto fixo de Brouwer
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								20/07/1933
-							</div>
-							<div class="texto">
-								Professor na IAS(Instituto para Estudos Avançados)
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								19/03/1940
-							</div>
-							<div class="texto">
-								Álgebras de Von Neumann
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								29/09/1943
-							</div>
-							<div class="texto">
-								Projeto Manhattan(2ª Guerra Mundial)
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								27/01/1944
-							</div>
-							<div class="texto">
-								Contribuições ao ENIAC
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								27/01/1946
-							</div>
-							<div class="texto">
-								Melhoria dos métodos e meios de utilização da energia nuclear
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								15/01/1950
-							</div>
-							<div class="texto">
-								Consultor da WSEG(Grupo de Avaliação de Sistemas de Armas)
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								27/01/1954
-							</div>
-							<div class="texto">
-								Arquiteto da comissão de energia atômica
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								28/07/1956
-							</div>
-							<div class="texto">
-								Medalha da liberdade e prêmios
-							</div>
-						</div>
-						<div class="timeline__item">
-							<div class="data">
-								08/02/1957
-							</div>
-							<div class="texto">
-								Morte de Von Neumann
-							</div>
-						</div>
+
+		<section id="acompanhamento">
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center mt-5 p-2 fundo-verde-claro">
+					<div class="col">
+						<h4 class="text-center text-white text-uppercase">acompanhe o trabalho em sua <strong>regional</strong></h4>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="centralizar">
-			<div class="area-util">
-				<div class="more">
-					Para mais informações, acesse: <a href="https://pt.wikipedia.org/wiki/John_von_Neumann">Wikipedia</a>
-				</div>
-			</div>
-		</section>
-		<footer class="centralizar">
-			<div class="area-util centralizar">
-				<div class="info centralizar">
-					<div class="info__links">
-						<a class="centralizar" href="https://www.linkedin.com/in/luiz-guilherme-silva-dev/">
-							<img src="./assets/images/linkedin.png" />
+				<div class="row justify-content-center align-items-center mx-3 my-5">
+					<div class="col text-center">
+						<a href="#" data-toggle="modal" data-target="#modalDetalhesMapa_0">
+							<img id="mapa" class="img-fluid" src="./assets/images/mapa.png">
 						</a>
-						<a class="centralizar" href="https://github.com/Lgjoo">
-							<img src="./assets/images/github.png" />
-						</a>
 					</div>
-					<div class="info__creditos">
-						Criado por Luiz Guilherme Silva, ícones por <a href="https://www.flaticon.com/authors/epiccoders" title="EpicCoders">EpicCoders</a> e <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
+				</div>
+				<div class="row justify-content-center align-items-center mx-3 my-5 pt-3">
+					<video controls poster="./assets/images/placeholder-video.jpg">
+						<source src="https://mid.curitiba.pr.gov.br/conteudos/1anodetrabalho/video/prefeitura_1_ano.mp4" type='video/mp4' />
+					</video>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center">
+					<div class="col-10 mb-n5">
+						<div class="row">
+							<div class="col-lg-6 text-lg-left text-center">
+								<img class="img-fluid" src="./assets/images/titulo-footer.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center fundo-verde">
+					<div class="col-8 py-5 px-3 my-5">
+						<div class="row justify-content-between">
+							<div class="col-lg text-lg-left text-center">
+								<div class="bloco-texto py-3 px-3">
+									<h2 class="texto-destaque"><span class="display-4 font-weight-bolder">450</span><strong> novos ônibus</strong></h2>
+									<h4 class="text-white">Troca de 150 ônibus por ano.</h4>
+								</div>
+								<div class="bloco-texto py-3 px-3">
+									<h2 class="texto-destaque">R$ <span class="display-4 font-weight-bolder">489</span><strong> milhões <br />em novos investimentos</strong></h2>
+									<h4 class="text-white">Em obras de mobilidade, drenagem e saneamento, além de manutenção.</h4>
+								</div>
+								<div class="bloco-texto py-3 px-3">
+									<h2 class="texto-destaque"><span class="display-4 font-weight-bolder">262</span><strong> km <br />de ruas com asfalto novo</strong></h2>
+									<h4 class="text-white">Obras de manutenção e recuperação de vias.</h4>
+								</div>
+								<div class="bloco-texto py-3 px-3">
+									<h2 class="texto-destaque"><span class="display-4 font-weight-bolder">100</span><strong> km <br />sem lama e poeira</strong></h2>
+									<h4 class="text-white">Ruas de saibro vão ganhar asfalto.<br />Meta é reduzir em um terço o número de ruas de saibro.</h4>
+								</div>
+								<div class="bloco-texto py-3 px-3">
+									<h2 class="texto-destaque"><span class="display-4 font-weight-bolder">10 CMEIs</span><strong><br />serão abertos em 2018</strong></h2>
+									<h4 class="text-white">Equipamentos abandonados estão sendo reativados.</h4>
+								</div>
+								<div class="bloco-texto py-3 px-3">
+									<h2 class="texto-destaque"><strong>Novo Restaurante Popular do Capanema</strong></h2>
+									<h4 class="text-white">Com esta nova unidade chegará a 1,1 milhão o número de pessoas atendidas por ano nos cinco restaurantes.</h4>
+								</div>
+							</div>
+							<div class="col-lg text-lg-right text-center">
+								<div class="bloco-texto py-3 px-3">
+									<h4 class="text-white">E grandes obras serão entregues:</h4>
+								</div>
+								<div class="bloco-texto py-3 px-3">
+									<h2 class="texto-destaque"><strong>Clubes da Gente, no Boa Vista e em Santa Felicidade</strong></h2>
+								</div>
+								<div class="bloco-texto py-3 px-3">
+									<h2 class="texto-destaque"><strong>Trincheira do Ceasa</strong></h2>
+								</div>
+								<div class="bloco-texto py-3 px-3">
+									<h2 class="texto-destaque"><strong>Terminal do Santa Cândida</strong></h2>
+								</div>
+								<div class="bloco-texto py-3 px-3">
+									<h2 class="texto-destaque"><strong>Modernização dos terminais Campina do Siqueira, Vila Oficinas e Hauer</strong></h2>
+								</div>
+								<div class="bloco-texto py-3 px-3">
+									<h2 class="texto-destaque"><strong>Viaduto do Pompéia</strong></h2>
+								</div>
+								<div class="bloco-texto py-3 px-3">
+									<h2 class="texto-destaque"><strong>Cine Passeio</strong></h2>
+								</div>
+								<div class="bloco-texto py-3 px-3">
+									<h2 class="texto-destaque"><strong>Novo viaduto e novas trincheiras na Linha Verde Sul </strong></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center align-items-center fundo-verde-claro p-3">
+					<div class="col-10 text-center">
+						<p class="text-white">PROJETO FEITO POR LUIZ GUILHERME SILVA PARA TESTE DE VAGA DE DESENVOLVEDOR FRONT-END DO INSTITUTO DA CIDADE INTELIGENTE, LAYOUT COM BASE NO <a href="https://www.curitiba.pr.gov.br/LandingPage/UmAnoDeTrabalho/">SITE</a>.</p>
 					</div>
 				</div>
 			</div>
 		</footer>
+
+		<!-- MODALS INFORMAÇÕES -->
+		<div class="modal fade" id="modalDetalhes_0" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_0" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_0">
+			      			Saúde
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Reestruturação de todo o sistema de atenção à saúde e mais de R$ 1,7 bilhão em investimentos.</h5>
+				        <ul class="pb-4">
+				        	<li>R$ 890 milhões em recursos municipais</li>
+				        	<li>R$ 730 milhões em recursos federais</li>
+				        	<li>R$ 51 milhões em recursos estaduais</li>
+				        </ul>
+				        <h5 class="pb-2">Farmácias com remédios e insumos nas 110 unidades de Saúde</h5>
+				        <ul class="pb-4">
+				        	<li>R$ 19,3 milhões em insumos</li>
+				        	<li>R$ 27,3 milhões em medicamentos</li>
+				        </ul>
+				        <h5 class="pb-2">Fortalecimento do atendimento em hospitais da rede SUS</h5>
+				        <ul class="pb-4">
+				        	<li>R$ 578,5 milhões repassados aos hospitais</li>
+				        </ul>
+				        <h5 class="pb-2">Melhoria da estrutura de cuidado dos doentes crônicos, atendidos pelos programas de hipertensão, diabetes e atenção aos idosos com patologias crônicas.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Reestruturação do programa Mãe Curitibana Vale a Vida</h5>
+				        <ul class="pb-4">
+				        	<li>Mais cuidado com a gestante: para cada tipo de risco na gravidez, um atendimento especializado.</li>
+				        	<li>Melhorias na Unidade Mãe Curitibana com ginecoobstetras.</li>
+				        	<li>Aquisição de camas e aparelhos especiais como de ultrassom e detectores fetais.</li>
+				        	<li>Maternidade do Bairro Novo recebeu dois novos cardiotocógrafos, para verificar o coração e vitalidade do bebê.</li>
+				        	<li>Curitiba aderiu ao programa Mãe Paranaense.</li>
+				        	<li>Maternidade Bairro Novo ganhou prêmio da Organização Mundial da Família, ligada a ONU.</li>
+				        </ul>
+				        <h5 class="pb-2">Aplicativo Saúde Já</h5>
+				        <ul class="pb-4">
+				        	<li>Permite o agendamento do primeiro atendimento no posto de saúde.</li>
+				        	<li>Sem filas na madrugada.</li>
+				        	<li>á foram realizados quase 43 mil agendamentos com a enfermagem e quase 2 mil com a odontologia, via aplicativo.</li>
+				        </ul>
+				        <h5 class="pb-2">Cuidado no atendimento</h5>
+				        <ul class="pb-4">
+				        	<li>Abertura de 313 novos leitos nos hospitais Irmandade Santa Casa de Misericórdia, Hospital Universitário Evangélico, Hospital das de Clínicas, Hospital do Rocio e Hospital São Vicente.</li>
+				        	<li>Seis novas ambulâncias para a frota do Samu, que desde 2014 não era atualizada.</li>
+				        	<li>A UPA Tatuquara foi aberta em maio e beneficia 150 mil pessoas da região.</li>
+				        	<li>Conclusão da Unidade de Saúde Jardim Aliança, no Santa Cândida.</li>
+				        	<li>Mais 39 leitos em UTIs, sendo 5 no Hospital de Clínicas, 4 no Hospital da Cruz Vermelha e 30 no Hospital do Trabalhador. Em fase de habilitação.</li>
+				        </ul>
+				        <h5 class="pb-2">Mutirões de consultas e exames especializados</h5>
+				        <ul class="pb-4">
+				        	<li>173 mil agendamentos nas especialidades de dermatologia, cardiologia, ortopedia, exames complementares, exames laboratoriais e cirurgias.</li>
+				        	<li>Fim da fila para exames laboratoriais.</li>
+				        	<li>55 mil pessoas aguardavam para ser atendidas no Laboratório Municipal, agora já têm os exames e fizeram suas consultas.</li>
+				        </ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_1" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_1" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_1">
+			      			Educação
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Linhas do Conhecimento com 14 mil participações, para a ampliação cultural dos estudantes com atividades e aulas de campo.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Contratados 119 professores, 47 inspetores (auxiliares de serviços escolares) e 460 universitários para atender estudantes em inclusão.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">R$ 4,3 milhões investidos na manutenção, reforma e pintura de escolas. Foram 422 intervenções executadas.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Farol do Saber Herbert de Souza agora é Farol do Saber e Inovação, com impressora 3D para os estudantes construírem protótipos. Reforma dos Faróis do Saber Manuel Bandeira, Fernando Amaro, Mário Quintana e Herbert de Souza.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Começaram a funcionar os Centros Municipais de Educação Infantil (CMEI) Milton Luiz Pereira, no bairro Campo do Santana, e Jornalista Mussa José de Assis, no bairro Ganchinho.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Finalizada a obra do CMEI União Ferroviária II, no Cajuru.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Dois CMEIs em construção.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">O número de estudantes atendidos em tempo integral chegou a 22.100.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Parceria com o Google Educação para o uso dos aplicativos da plataforma na Rede Municipal de Ensino.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Lançado o projeto Cientistas na Escola com a participação de 8,3 mil estudantes.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Fortalecimento das ações de educação de jovens e adultos.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">29 mil vagas ofertadas em cursos e formações para os profissionais da rede municipal.</h5>
+				        <ul class="pb-4"></ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_2" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_2" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_2">
+			      			Finanças
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">O déficit orçamentário no início deste ano era de R$ 2,1 bilhões, dívidas acumuladas somavam R$ 1,2 bilhão, despesas sem empenho na ordem de R$ 614 milhões.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Os fornecedores estavam ameaçando interromper serviços e a entrega de produtos, como remédios, merenda e manutenção da cidade. Foi criado um conjunto de projetos de lei com medidas de curto, médio e longo prazos para resolver o problema fiscal do município.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Plano de Recuperação - Lei de Responsabilidade Fiscal Municipal, ajustes no IPMC, criação de um fundo de previdência complementar municipal, leilão de dívidas municipais, criação de um Domicílio Eletrônico do Contribuinte, adequações no Recursos Humanos, cadastro de devedores, criação do Nota Curitiba, separação da taxa de coleta do lixo do IPTU, ajustes no ITBI e atualização do ISS.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Resultados alcançados.</h5>
+				        <ul class="pb-4">
+				        	<li>Dívidas pagas com 800 fornecedores.</li>
+				        	<li>Desconto médio obtido com o leilão de dívidas: 19%. Economia para o município.</li>
+				        	<li>Regulamentação do Nota Curitibana.</li>
+				        	<li>Curitiba teve 59% mais investimentos próprios até agosto, sendo uma das três capitais onde houve incremento. Na média, queda nas demais capitais foi de 63%.</li>
+				        	<li>Regulamentação do Cadastro Informativo Municipal (Cadin).</li>
+				        	<li>Manutenção de todas as obras da cidade.</li>
+				        	<li>Remédios nas prateleiras, insumos para saúde.</li>
+				        	<li>Pagamento dos salários em dia, incluindo o 13°.</li>
+				        	<li>Orçamento para investimentos em 2018 dobrou: R$ 489 milhões.</li>
+				        	<li>Curitiba foi considerada em 2017 a capital com mais qualidade do gasto público.</li>
+				        	<li>A capital subiu 11 posições no ranking das cidades com melhor ambiente de negócios da Endeavor. Subiu para o 4º lugar.</li>
+				        	<li>Volta da venda de Certificados de Potencial Ampliado de Construção (Cepacs) na Bolsa de Valores de São Paulo.</li>
+				        	<li>Com a casa em ordem, foi possível obter R$ 120 milhões em financiamentos para implantação de asfalto em ruas de saibro.</li>
+				        	<li>E também foram assegurados R$ 123 milhões do governo federal para grandes obras em 2018, como a Linha Verde (lote 4); trincheira da Avenida Nossa Senhora Aparecida com Mario Tourinho; construção do terminal de transporte do Tatuquara; reforma do terminal de transporte Vila Oficinas, no Cajuru; e melhorias na rede de esgoto.</li>
+				        	<li>Conclusão do Programa de Recuperação Fiscal, tendo nos 3 meses finais o dobro da efetividade em relação ao ano anterior.</li>
+				        	<li>R$ 131,5 milhões pagos pela Caixa pelo direito de movimentar a folha de salários do município.</li>
+				        </ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_3" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_3" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_3">
+			      			Zeladoria Municipal
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Mutirões de manutenção e limpeza foram feitos nas administrações regionais.</h5>
+				        <ul class="pb-4">
+				        	<li>A malha viária recebeu 3,3 mil quilômetros de manutenção com tapa-buracos.</li>
+				        	<li>281 quilômetros de manutenção de drenagem: recuperação e desobstrução de galerias pluviais, de tubulação, limpeza de sarjetas e valas e manutenção de caixas de captação.</li>
+				        	<li>20,7 milhões de metros quadrados de área receberam obras e ações de paisagismo, limpeza de ruas e terrenos públicos, roçadas e manutenção de ciclovias e passeios.</li>
+				        	<li>Instalação de 933 novos pontos de luz, com luminárias de LED.</li>
+				        	<li>As novas lâmpadas iluminaram 18,5 quilômetros de ciclovias e calçadas da cidade.</li>
+				        	<li>71,8 mil ocorrências atendidas para troca de lâmpadas, reposição de cabos furtados, troca de reatores e relês queimados.</li>
+				        	<li>38.961 lâmpadas queimadas foram trocadas na cidade. Em média a troca é feita em 48 horas.</li>
+				        	<li>Trocadas 4.261 lâmpadas e luminárias, em 25 bairros. Saíram as lâmpadas de vapor de sódio e entraram as de vapor metálico, mais modernas e eficazes.</li>
+				        	<li>Implantação de iluminação cênica no Jardim Botânico; no Memorial Ucraniano, no Parque Tingui; no Largo da China, no Centro Cívico; e no Parque Barigui.</li>
+				        	<li>Novo sistema de iluminação do Teatro Paiol.</li>
+				        </ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_4" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_4" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_4">
+			      			Obras
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Obras paralisadas foram retomadas, muitas concluídas e outras novas e importantes ao desenvolvimento da cidade foram iniciadas.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">R$ 120 milhões para recuperar a malha viária da cidade, em parceria com o Governo do Estado.</h5>
+				        <ul class="pb-4">
+				        	<li>São 160 quilômetros de reciclagem em 267 ruas.</li>
+				        	<li>Reativada a Usina de Asfalto Engenheiro Gilberto Bueno Coelho, a Usina de Asfalto Norte.</li>
+				        	<li>Em andamento a revitalização da Avenida Manoel Ribas: novo pavimento, calçadas com rampas de acesso a cadeirantes, ciclovia, obras de drenagem e paisagismo.</li>
+				        	<li>Conclusão da pavimentação e alargamento da marginal da BR-277 com calçadas e nova sinalização.</li>
+				        	<li>Rua Raul Pompéia foi revitalizada: novo asfalto, calçadas, sinalização, drenagem, iluminação, arborização e rampas de acessibilidade.</li>
+				        	<li>Entrega do prolongamento da Rua Governador Agamenon Magalhães.</li>
+				        	<li>Em construção as alças de acesso à Trincheira da Ceasa, que fará a ligação entre os bairros CIC e Tatuquara.</li>
+				        	<li>Nova pavimentação da Linha Verde Norte (lote 3.1) atingiu mais de 80% em todas as pistas de circulação. Também progrediram as obras de drenagem e terraplanagem.</li>
+				        	<li>Trincheira da Rua Fulvio Alice com 45% de execução.</li>
+				        	<li>Retomadas as obras para o controle de cheias dos Rios Barigui e Belém.</li>
+				        	<li>Concluído o novo asfalto da Linha Verde Sul (BR-476).</li>
+				        	<li>Finalização das obras dos Clubes da Gente Bairro Alto e Santa Felicidade e do Cine Passeio.</li>
+				        </ul>
+			        </div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_5" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_5" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_5">
+			      			Governo Municipal
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Gestão institucional</h5>
+				        <p>Num trabalho integrado entre várias secretarias e órgãos, a Prefeitura negociou com órgãos financiadores e governos e conseguiu manter a cidade apta a obter R$ 2,3 bilhões de recursos que estava prestes a perder por falta de acompanhamento adequado dos projetos.</p>
+				        <p>Com isso, a cidade conquistou pelo menos R$ 489 milhões em transferências e financiamentos para grandes obras em 2018, e se mantém na disputa por outros recursos.</p>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Parceria com a Câmara</h5>
+				        <p>A Câmara Municipal devolveu à Prefeitura R$ 35 milhões do dinheiro repassado para provimento da Casa em 2017, que serão usados no reforço da zeladoria da cidade.</p>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Prestação de contas</h5>
+				        <p>A prestação de contas à Câmara Municipal foi frequente, principalmente em decorrência do Plano de Recuperação de Curitiba. Secretários, presidentes e técnicos de órgãos municipais estiveram em oito ocasiões na Câmara, participando de sessões plenárias e de audiências públicas sobre o Plano. Houve ainda 11 apresentações e debates apenas relacionados ao IPMC com servidores e representantes da sociedade civil organizada.</p>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Diálogo e transparência</h5>
+				        <p>A Prefeitura criou comissão de negociação com os sindicatos que representam os servidores municipais. Os encontros são regulares, e a pauta de assuntos é encaminhada pelos sindicalistas. Em média foi realizada uma reunião a cada 5,7 dias úteis. </p>
+				        <ul class="pb-4"></ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_6" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_6" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_6">
+			      			Ação Social
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Curitiba que Acolhe:</h5>
+				        <ul class="pb-4">
+				        	<li>4.111 pessoas foram acolhidas e encaminhadas para serviços de ação social.</li>
+				        	<li>721 pessoas abordadas nas ruas receberam apoio para retornar para seus municípios de origem.</li>
+				        	<li>Criação da Casa de Acolhida do Bairro Novo e da Casa de Acolhida do Rebouças. 230 atendimentos por dia.</li>
+				        	<li>Abertura do Centro POP Bairro Novo, para atender 65 pessoas, durante o dia.</li>
+				        	<li>Criado o Expresso Solidariedade - ônibus que oferece refeição saudável a pessoas em situação de rua. Com apoio de voluntários, mais de 63 mil refeições servidas.</li>
+				        </ul>
+				        <h5 class="pb-2">Campanha do Agasalho da Prefeitura</h5>
+				        <p>Recorde de arrecadação. 730 mil peças de roupas, calçados e cobertores que foram distribuídos a pessoas em situação de vulnerabilidade social.</p>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Restaurante Popular do Viaduto do Capanema será aberto em janeiro e servirá quinhentas refeições por dia, com atendimento também a pessoas em situação de rua. </h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Mais empregos e capacitação</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Readequação e melhorias nos dez Postos de Atendimento do Sistema Nacional de Emprego (Sine).</h5>
+				        <ul class="pb-4">
+				        	<li>270 mil atendimentos nos postos do Sine. </li>
+				        	<li>52,9 mil emissões de Carteira de Trabalho.</li>
+				        	<li>2,6 mil trabalhadores foram inseridos no mercado de trabalho.</li>
+				        </ul>
+				        <h5 class="pb-2">Fortalecimento dos Liceus de Ofícios – quase fechados pela antiga gestão – voltaram a ofertar 189 cursos. Neste ano, foram oferecidas 12 mil vagas em cursos, como informática, inglês para hotelaria, costura industrial, matemática e auxiliar administrativo.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Novas parcerias para a oferta de cursos com o Centro de Integração Empresa-Escola (CIEE-PR), Senai, Sesc, Electrolux e Instituto Zonta.</h5>
+				        <ul class="pb-4"></ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_7" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_7" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_7">
+			      			Abastecimento
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Mais 30 mil famílias passaram a ser beneficiadas nos Armazéns da Família, com a mudança da faixa salarial dos atendidos. Agora, um total de 255 mil famílias são atendidas nos armazéns da Prefeitura.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">33 unidades dos Armazéns da Família foram revitalizadas.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Mais de 30 itens foram incorporados à linha de produtos nos Armazéns. Agora são 365 produtos entre gêneros alimentícios, de higiene e limpeza.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Mais de 53 mil famílias beneficiadas com o retorno dos convênios com cinco municípios da Região Metropolitana.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Gestão de qualidade implantada nos 33 Armazéns com redução de 13,7% no custo operacional do programa. </h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Os Armazéns voltaram a ser reguladores de preços de produtos básicos.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Lançado o programa Horta do Chef que fez aumentar a renda das famílias do projeto Hortas Comunitárias.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Inaugurada a Horta Urbana do Cajuru, a 24ª área de cultivo comunitário apoiada pela Prefeitura.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Modernização do Disque Economia.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Modernização dos restaurantes populares Matriz, Sítio Cercado, Pinheirinho e CIC/Fazendinha.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Renegociação de contratos com as empresas que operam os Restaurantes Populares e as feiras livres: economia de R$ 1,2 milhão.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Criado um calendário anual de eventos e ações especiais.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Distribuição de cestas básicas, durante um ano, para 80 famílias que vivem em situação de risco na Vila 29 de Outubro, no Caximba.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Aproximadamente 90 toneladas de hortifrutigranjeiros e pães foram distribuídos a entidades sociais, beneficiando mais de 11 mil pessoas em risco social.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Lançado o projeto Centro de Referência de Agricultura Urbana e Economia Criativa para criação de grande horta comunitária.</h5>
+				        <ul class="pb-4"></ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_8" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_8" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_8">
+			      			Habitação
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Mais de 2 mil títulos de propriedades de posse entregues a cidadãos que ainda viviam em terrenos irregulares.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">147 casas e sobrados entregues para famílias que viviam às margens de rios e em áreas sujeitas a deslizamentos.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Retomadas as obras de 206 moradias nos conjuntos habitacionais Maringá 1 (Cachoeira), Faxinal (Santa Cândida) e Vila Padro (Prado Velho).</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">729 famílias da fila e inscritos foram beneficiados com apartamentos viabilizados por meio de parcerias com a iniciativa privada.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Ações com famílias nas vilas 29 de outubro, no Caximba, e Portelinha, no Santa Quitéria, para melhorar a condição de habitação e promover o desenvolvimento das famílias.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">1,3 quilômetro de ruas pavimentadas</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Construção de três quadras de areia e parquinho para recuperação ambiental da Vila Acrópole, no Cajuru.</h5>
+				        <ul class="pb-4"></ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_9" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_9" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_9">
+			      			Cidadania
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Mutirões da Cidadania</h5>
+				        <p>Mais de 200 mil pessoas atendidas nos mutirões – parceria entre a Prefeitura de Curitiba e o Governo do Estado - regionais Bairro Novo, Cajuru, CIC, Tatuquara e Boqueirão.</p>
+				        <p>Previsão de mais 150 mil pessoas atendidas em 2018 nos mutirões das regionais de Santa Felicidade, Boa Vista, Matriz, Portão e Pinheirinho.</p>
+				        <p>Mutirões para decisões jurídicas envolvendo pessoas incapazes: 70 processos concluídos.</p>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Fala Curitiba</h5>
+				        <p>80 audiências públicas para as dez regionais da cidade, para pegar sugestões para o ORÇAMENTO municipal de 2018.</p>
+				        <p>5 mil sugestões propostas pela população.</p>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Audiências públicas – LDO</h5>
+				        <p>Além do Fala Curitiba, foram realizados encontros em todas as dez regionais da cidade para conhecer as prioridades da população para os gastos do orçamento do ano que vem – trabalho que é consolidado primeiramente na Lei de Diretrizes Orçamentárias (LDO). Participaram dos encontros 1.466 pessoas. O número de sugestões feitas pela internet chegou a 2.196.</p>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Melhoria em todas as Ruas da Cidadania</h5>
+				        <p>Instalação de totens de autoatendimento do Detran nas dez administrações regionais, em parceria com o Governo do Estado.</p>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Rua da Cidadania Cajuru abre para valer.</h5>
+				        <p>Inaugurada sem uma série de serviços, a unidade teve completados seus núcleos administrativos e de atendimento à população.</p>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Direitos Humanos</h5>
+				        <ul class="pb-4">
+				        	<li>Instalado núcleo da Delegacia da Mulher na Casa da Mulher Brasileira de Curitiba.</li>
+				        	<li>Este ano, a Casa fez mais de 15 mil atendimentos de mulheres em situação de risco e violência familiar.</li>
+				        	<li>Implantado o Centro de Apoio e Referência em Empregabilidade da Pessoa com Deficiência e um posto Sine.</li>
+				        	<li>Ampliação do atendimento pela Central de Libras.</li>
+				        	<li>Policiais militares foram treinados para o atendimento de surdos.</li>
+				        	<li>50 casos de discriminação atendidos e acompanhados pela Assessoria de Políticas da Diversidade Sexual.</li>
+				        	<li>150 reuniões feitas pelo Programa DiverCidade.</li>
+				        </ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_10" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_10" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_10">
+			      			Meio Ambiente
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Fortalecimento da Rede de Proteção Animal com mais de 3 mil pessoas sensibilizadas para a guarda responsável em ações de castração do Programa Municipal de Castração de Cães e Gatos.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Novas parcerias com cinco ONGs de Proteção Animal e 600 protetores independentes.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Realojadas quatro edições da feira Amigo Bicho e eventos promovidos com parceiros.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">3,7 mil animais foram identificados com microchip, a partir dos critérios da guarda responsável.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Conclusão do Centro de Referência para Animais em Situação de Risco (Crar).</h5>
+				        <p>R$ 5 milhões destinados à causa da Proteção Animal.</p>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Lançamento do projeto Jardins do Mel para aulas de campo em educação ambiental.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Reabertura do Museu de História Natural para visitação aos fins de semana e recuperação da passarela do bosque.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">16 mil estudantes atendidos no Museu de História Natural e no Zoológico.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Manutenção nos 43 parques e bosques e 451 praças da cidade.</h5>
+				        <p>20 mil árvores plantadas em vias públicas, escolas e ações de associações comunitárias.</p>
+				        <ul class="pb-4"></ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_11" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_11" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_11">
+			      			Cultura
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Promoção de grandes eventos do calendário cultural da cidade: Carnaval, Aniversário da Cidade e Paixão de Cristo.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Apoio para importantes eventos ou manifestações culturais populares:</h5>
+				        <ul class="pb-4">
+				        	<li>Zombie Walk, Olhar de Cinema, Festival Nacional da Arte Capoeira, Celebração de Corpus Christi, Semana Cultural de Curitiba, Bienal de Curitiba, Marcha para Jesus, Marcha da Diversidade, entre outros.</li>
+				        	<li>Etnias ganharam palco especial com o lançamento do Programa Pavilhão Étnico.</li>
+				        	<li>7.850 pessoas participaram de ações educativas da Fundação Cultural de Curitiba.</li>
+				        	<li>Nomeação dos membros do Conselho Municipal do Patrimônio Cultural e a criação do Fundo de Patrimônio Cultural.</li>
+				        	<li>Mais de mil cantores participaram da II Semana de Canto Coral Henrique de Curitiba.</li>
+				        	<li>Criação da Roda de Samba para valorizar a diversidade musical.</li>
+				        	<li>Lançados os programas MusicaR e Vivências e Convivências 60+.</li>
+				        	<li>Lançado o projeto Domingo de Bolso com programação cultural diversificada todo terceiro domingo do mês.</li>
+				        	<li>A FCC passou a compartilhar o Moinho Rebouças, sua sede, com a Agência Curitiba de Desenvolvimento. Com a mudança, o Moinho passou a ser denominado “Engenho da Inovação”, por abrigar ainda as ações do Programa Vale do Pinhão.</li>
+				        	<li>Limpeza e despiche da Praça 19 de Dezembro, no Centro.</li>
+				        	<li>Reabertura da Casa Kozák, no Uberaba.</li>
+				        	<li>Reforma do Teatro do Paiol.</li>
+				        	<li>R$ 2,5 milhões destinados para os editais Paiol Musical, Carnaval 2018 e do Audiovisual, parceria com a Ancine. Reforma do antigo prédio do Exército, que será transformado no complexo cultural Cine Passeio.</li>
+				        </ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_12" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_12" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_12">
+			      			Defesa Social
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Guardas Municipais em ação</h5>
+				        <ul class="pb-4">
+				        	<li>60 novos guardas aprovados em concurso público estão sendo chamados para reforçar o efetivo.</li>
+				        	<li>Operações conjuntas entre Polícia Civil, Polícia Militar e Polícia Rodoviária Federal viraram rotina em Curitiba. Operações em ruas centrais e em linhas de ônibus para reprimir a prática dos fura-catracas.</li>
+				        	<li>Reforço da presença dos guardas municipais em parques e praças. Operação Saturno foi implantada pela Guarda Municipal para atender as regiões com alto índice de criminalidade.</li>
+				        	<li>Criada a Balada Protegida, ação de caráter educativo e preventivo, voltada aos jovens, com 50 edições realizadas.</li>
+				        	<li>Praça Osório ganhou novo módulo da Guarda Municipal e revitalização nos jardins do entorno.</li>
+				        	<li>A frota da Guarda Municipal, que não era trocada desde 2013, recebeu 35 novas viaturas.</li>
+				        	<li>Novos equipamentos: foram adquiridos 516 coletes balísticos e foi feita a reposição e troca de munições.</li>
+				        	<li>Instituída a Patrulha do Transporte Coletivo, que intensificou a presença de guardas municipais em estações-tubo e terminais. 40 escolas municipais passaram a contar com guardas municipais de forma fixa.</li>
+				        </ul>
+				        <h5 class="pb-2">Protegendo as pessoas</h5>
+				        <ul class="pb-4">
+				        	<li>A Patrulha Maria da Penha realizou mais de 2 mil visitas e prestou 130 encaminhamentos à Delegacia da Mulher e mais de 220 orientações diversas.</li>
+				        	<li>Botão do Pânico: Curitiba passa a integrar, em conjunto com a Secretaria Estadual da Família e Desenvolvimento Social e Tribunal de Justiça do Paraná, o projeto Dispositivo de Segurança Preventiva (Botão do Pânico), para ampliar a fiscalização para proteção a mulheres em situação de violência doméstica e familiar em áreas priorizadas.</li>
+				        </ul>
+				        <h5 class="pb-2">Segurança no trânsito</h5>
+				        <ul class="pb-4">
+				        	<li>Implantação do binário entre as ruas Mateus Leme (sentido único para o bairro) e Nilo Peçanha (sentido centro), com maior fluidez de veículos e mais segurança no trecho, tanto para veículos quanto para pedestres. Esta é a primeira fase de implantação do projeto, que começa na Rua Treze de Maio, no Centro, e segue até a Evaldo Wendler, no bairro São Lourenço. A segunda fase do binário incluirá o trecho do Parque São Lourenço e está em estudo pelo Ippuc, em conjunto com Setran e Urbs.</li>
+				        	<li>Nova sinalização em ruas garantiu mais segurança no trânsito. São mais de 124 mil metros quadrados de sinalização horizontal nas ruas.</li>
+				        	<li>490 novas placas de sinalização são instaladas na cidade, por mês.</li>
+				        </ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_13" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_13" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_13">
+			      			Transporte
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Renovação da frota de ônibus com vida útil vencida e em circulação: 25 ligeirões + 150 ônibus por ano. Dez novos ônibus já entraram em circulação no fim deste ano.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Reintegração com a RMC: 60 mil passageiros beneficiados por dia. Estão interligadas:</h5>
+				        <ul class="pb-4">
+				        	<li>Colombo/CIC</li>
+				        	<li>Araucária/Capão Raso e Angélica/Capão Raso passando pelo terminal CIC</li>
+				        	<li>Estação PUC com Fazenda Rio Grande</li>
+				        	<li>Roça Grande/Terminal Santa Cândida</li>
+				        	<li>Terminal Angélica (Araucária) com o terminal Pinheirinho (Curitiba)</li>
+				        	<li>Quatro Barras/ Terminal Santa Cândida</li>
+				        </ul>
+				        <h5 class="pb-2">Implantação da integração temporal na linha expressa Santa Cândida/Capão Raso para usuários usarem os serviços da Rua da Cidadania do Boa Vista.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Extensão do itinerário para atender moradores do Residencial Cedros, no Santa Cândida.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Fim da taxa de bagagem cobrada nos táxis e da cobrança pelo trecho de deslocamento do veículo até o embarque do passageiro.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Regulamentação dos serviços como Uber, Cabify, 99 Pop e Ecodrivers.</h5>
+				        <ul class="pb-4"></ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_14" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_14" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_14">
+			      			IPPUC
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Resgate do planejamento adequado às demandas de cada região da cidade.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Projetos e estudos para as dez administrações regionais. Integrados ao macroplanejamento, como a finalização da Linha Verde e a implantação da Conectora 3 e às demandas locais dos bairros da cidade.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Projeto do Restaurante Popular do Viaduto do Capanema.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Estudo de implantação da Rua da Cidadania na Vila Nossa Senhora da Luz.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Propostas de revitalização e modernização dos espaços culturais: Cinemas Luz/Riachuelo (Cine Passeio) e integração da Igreja da Ordem com o Museu de Arte Sacra da Arquidiocese de Curitiba (MASAC) e o Cenáculo Arquidiocesano.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Projeto de remodelação do Mercado Municipal. </h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Projeto de paisagismo do espaço cultural Largo da China, onde está a escultura de Confúcio, no cruzamento das ruas Marechal Hermes e Deputado Mário de Barros.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Projeto do Vale do Pinhão.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Estudo de edifícios-garagem com habitações de interesse social na região do Rebouças.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Implantação do Memorial Paranista, dentro do Parque São Lourenço.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Projeto de revitalização da Av. Manoel Ribas.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Terminal Tatuquara.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Requalificação de 3 Terminais de Transporte (Vila Oficinas, Campina do Siqueira e Hauer).</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Centro de Referência de Agricultura Urbana e Economia Criativa.</h5>
+				        <ul class="pb-4"></ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_15" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_15" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_15">
+			      			Urbanismo
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">A burocracia para a abertura de empresas na cidade foi vencida e isso tem ajudado a estimular o empreendedorismo na cidade. A fiscalização no comércio melhorou. </h5>
+				        <ul class="pb-4">
+				        	<li>Mais agilidade e menos burocracia na liberação de documentos e alvarás com a implantação ao sistema Empresa Fácil. Mais de 8 mil alvarás emitidos desde agosto. </li>
+				        	<li>A fiscalização é essencial para preservar a qualidade urbanística e qualidade de vida na cidade. Em 2017, foram emitidas 16.403 notificações, multas e embargos para comerciantes irregulares.</li>
+				        </ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_16" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_16" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_16">
+			      			Esporte e Lazer
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">O setor ampliou os atendimentos nas atividades oferecidas à população de todas as idades, por toda a cidade.</h5>
+				        <ul class="pb-4">
+				        	<li>São 25.772 inscritos nas diferentes modalidades, média 5% maior.</li>
+				        	<li>Aumento de 62% de participação nas atividades de contraturno escolar com a implantação do Escola + Esporte = 10.</li>
+				        	<li>Implantado o projeto Legado Olímpico com atividades sistemáticas e orientadas para prática de artes marciais nas dez regionais.</li>
+				        	<li>Decreto n.º 1.743/2017 promoveu avanços na Lei Municipal de Incentivo ao Esporte.</li>
+				        	<li>Reforma e adequação do ginásio da Rua da Cidadania do Carmo.</li>
+				        	<li>195 ações nas Academias ao Ar Livre espalhadas nos bairros.</li>
+				        	<li>Curitiba foi, pela segunda vez, sede dos Jogos Escolares da Juventude e sediou a etapa final da Liga Mundial de Vôlei.</li>
+				        </ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_17" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_17" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_17">
+			      			IMAP
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Inovação e boas práticas de gestão pública.</h5>
+				        <ul class="pb-4">
+				        	<li>Nova era no Instituto Municipal de Administração Pública (Imap) que aliou inovação às boas práticas para melhorar a gestão pública e capacitar os colaboradores.</li>
+				        	<li>Abertura do primeiro Coworking público municipal, anexo ao Salão e Atos do Parque Barigui.</li>
+				        	<li>Redução em mais de 40% dos gastos do custeio do instituto com aluguéis, telefonia, frota e manutenção sem prejudicar os serviços.</li>
+				        	<li>Criação e gestão da primeira pós-graduação em Administração Pública gratuita para servidores.</li>
+				        	<li>Lançado o programa Fala Curitiba que aumentou as consultas públicas nos bairros de 10 para 80 encontros.</li>
+				        </ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_18" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_18" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_18">
+			      			Relações Internacionais
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Neste ano, a administração trabalhou para estreitar relações com grandes organismos internacionais e a cidade celebrou importantes parcerias.</h5>
+				        <ul class="pb-4">
+				        	<li>90 delegações internacionais foram recebidas em Curitiba e mais de 700 autoridades e técnicos estrangeiros vieram à cidade aprender e trocar experiências.</li>
+				        	<li>Curitiba celebrou protocolos de intenções de cooperação técnica com Orlando e Columbus para ampliar parcerias de educação, esportes, turismo e transporte.</li>
+				        	<li>Celebrou acordos com a Suécia, para a área de agricultura urbana e um Protocolo de Intenções com a Finlândia, na área da educação.</li>
+				        </ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_19" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_19" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_19">
+			      			Turismo
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">O setor ganhou reforço para posicionar Curitiba como um importante polo turístico do país.</h5>
+				        <ul class="pb-4">
+				        	<li>Lançado novo mapa turístico, trilíngue, para impulsionar o setor na cidade.</li>
+				        	<li>O programa CuritiBéra foi lançado e as cervejarias artesanais da cidade incluídas na rota do turismo.</li>
+				        	<li>Criada a programação natalina de Curitiba, com espetáculos diários, para posicionar a cidade como um dos principais polos turísticos do Brasil para a data.</li>
+				        	<li>Retomada do programa Empório Metropolitano.</li>
+				        </ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_20" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_20" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_20">
+			      			Agência Curitiba de Desenvolvimento e Inovação
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Com o programa “Curitiba, Cidade das Startups” do Vale do Pinhão as empresas iniciantes de tecnologia passaram a contar com ações segmentadas e direcionadas. </h5>
+				        <ul class="pb-4">
+				        	<li>Foram promovidos 46 eventos gratuitos voltados à inovação e ao empreendedorismo, além da criação da Lei de Inovação. Dois novos Espaços Empreendedor, reforma e otimização de equipamentos aumentou em 30% os atendimentos.</li>
+				        	<li>Mais de 100 mil atendimentos para interessados em abrir, regularizar ou manter um negócio.</li>
+				        	<li>Curitiba foi eleita a segunda cidade brasileira mais inteligente e conectada do Brasil pelo ranking Connected Smart Cities.</li>
+				        	<li>Cidade sede do Smart City Expo World Congress 2018, o maior evento de cidades inteligentes do mundo.</li>
+				        	<li>Curitiba subiu 11 posições no ranking geral do Índice de Cidades Empreendedoras (ICE), elaborado pela consultoria Endeavor e passou a ocupar a quarta posição entre as cidades que reúnem as melhores condições para abertura de empresas.</li>
+				        	<li>Reativou o programa de capacitação a empreendedores Bom Negócio.</li>
+				        </ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_21" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_21" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_21">
+			      			Administração
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Os órgãos municipais passaram de 33 para 26, resultando em corte de cargos e funções gratificadas, que vão promover economia ao longo de toda a gestão.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Vale do Pinhão foi lançado para fortalecer a cidade como polo nacional de inovação, com a atração de startups e o suporte do município e de instituições de ensino e pesquisa.</h5>
+				        <ul class="pb-4"></ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_22" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_22" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_22">
+			      			IPMC
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Aprovação de medidas para resolver o déficit atuarial de R$ 14,3 bilhões do Instituto de Previdência dos Servidores Municipais de Curitiba – entre elas, a criação de um fundo de pensão complementar (inédito entre as capitais) para o funcionalismo da cidade.</h5>
+				        <ul class="pb-4"></ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="modalDetalhes_23" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesLabel_23" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesLabel_23">
+			      			Curitiba S/A
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+				        <h5 class="pb-2">Regularização de mais de mil metros quadrados de área na Cidade Industrial de Curitiba (CIC). Outras estão em estudo.</h5>
+				        <ul class="pb-4"></ul>
+				        <h5 class="pb-2">Cem empresas da CIC foram diretamente beneficiadas com a retomada das ações de relacionamento com as indústrias da região.</h5>
+				        <ul class="pb-4"></ul>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>		
+
+		<!-- MODALS MAPA -->
+		<div class="modal fade modal-mapa" id="modalDetalhesMapa_0" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesMapaLabel_0" aria-hidden="true">
+		  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+		      			<h4 class="text-white font-weight-bold text-uppercase ml-3 mb-0" id="modalDetalhesMapaLabel_0">
+			      			REGIONAL SANTA FELICIDADE
+			      		</h4>
+			      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<i class="fas fa-times mr-3"></i>
+				        </button>		        
+			      	</div>
+		      		<div class="modal-body bg-white">
+		      			<p>Moradores da Regional Santa Felicidade podem comemorar importantes obras realizadas neste ano, fruto dos ajustes de contas da Prefeitura e do plano de recuperação criado para a cidade. Nove ruas tiveram o asfalto recuperado e a revitalização da Avenida Manoel Ribas, enfim, saiu do papel. A Prefeitura também conseguiu normalizar o fornecimento de medicamentos nas farmácias, reformar e fazer melhorias em 39 escolas e creches da região.</p>
+				        <div class="row justify-content-center align-items-center my-3">
+				        	<button type="button" class="btn btn-outline-info text-uppercase">Mais Detalhes</button>
+				        </div>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./assets/js/script.js"></script>
+		<script src="https://kit.fontawesome.com/49269f8f89.js" crossorigin="anonymous"></script>
 	</body>
 </html>

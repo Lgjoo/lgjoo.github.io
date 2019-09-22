@@ -1,206 +1,83 @@
-* {
-	font-family: Arial;
-	font-size: 14px;
+.area-topo {
+	max-height: 700px;
+	height: 100%;
 }
 
-body {
-	padding: 0;
-	margin: 0;
-	background-color: rgb(40, 40, 40);
+.area-topo img {
+	height: 700px;
+	object-fit: contain;
+	background-color: rgba(40, 40, 40, 0.5);
 }
 
-.centralizar {
-	display: flex;
-	flex: 1;
-	justify-content: center;
-	align-items: center;
+.area-topo .carousel-item {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.area-util {
-	width: 100%;
-	max-width: 1024px;
+.area-topo .carousel-item h4 {
+	text-shadow: 0px 0px 4px #333333;
 }
 
-.tributo {
-	margin: 40px;
-	flex-direction: column;
-	text-align: center;
+.area-logo {
+	padding: 0 !important;
 }
 
-.tributo__title {
-	font-size: 40px;
-	font-weight: bold;
-	color: rgba(190, 190, 190, 0.8);
-	text-shadow: 0.5px 0.5px 1.5px #CCCCCC;
+.fundo-verde {
+	background-color: #7DC353;
 }
 
-.tributo__subtitle {
-	margin-top: 5px;
-	font-size: 30px;
-	font-weight: 500;
-	color: rgba(180, 180, 180, 0.5);
-	text-shadow: 0.5px 0.5px 1px #666666;
+.fundo-verde-claro {
+	background-color: #49cc47;
 }
 
-.image-area {
-	border: 2px solid #444444;
-	background-color: #444444;
+.fundo-verde .texto-destaque {
+	color: #FED20F;
 }
 
-.image-area__foot-note {
-	color: #BBBBBB;
-	margin: 5px 5px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 12px;
-}
-
-.resumo {
-	text-align: justify;
-	color: #BBBBBB;
-	margin: 30px 10px;
-}
-
-.timeline {
-	display: flex;
-	flex-direction: row;
-	margin: 20px 10px;
-}
-
-.timeline__linha {
-	width: 15px;
-	background-color: #BBBBBB;
-	border-radius: 10px;
-}
-
-.timeline__detalhes {
-	display: flex;
-	flex-direction: column;
-	margin: 10px 0px;
-}
-
-.timeline__item {
-	color: #BBBBBB;
-	margin-bottom: 20px;
-}
-
-.esquerda .timeline__item .data {
-	font-size: 16px;
-	font-weight: bold;
-	padding: 0px 30px 2px 0px;
-	margin-left: 10px;
-	text-align: right;
-}
-
-.esquerda .timeline__item .texto {
-	border-top: 1px solid #777777;
-	padding: 5px 30px 5px 0px;
-	margin-left: 10px;
-	max-width: 300px;
-	text-align: right;
-}
-
-.esquerda .timeline__item:nth-child(even) {
-	height: 30px;
-}
-
-.esquerda .timeline__item:nth-child(even) .texto,
-.esquerda .timeline__item:nth-child(even) .data {
-	display: none
-}
-
-.direita .timeline__item .data {
-	font-size: 16px;
-	font-weight: bold;
-	padding: 0px 0px 2px 30px;
-	margin-right: 10px;
-	text-align: left;
-}
-
-.direita .timeline__item .texto {
-	border-top: 1px solid #777777;
-	padding: 5px 0px 5px 30px;
-	margin-right: 10px;
-	max-width: 300px;
-	text-align: left;
-}
-
-.direita .timeline__item:nth-child(odd) {
-	height: 30px;
-}
-
-.direita .timeline__item:nth-child(odd) .texto,
-.direita .timeline__item:nth-child(odd) .data {
-	display: none
-}
-
-.more {
-	text-align: justify;
-	color: #BBBBBB;
-	margin: 10px 10px;
-}
-
-.more a {
-	color: #BBBBBB;
+.accordion a:hover {
 	text-decoration: none;
 }
 
-.more a:hover {
-	color: #777777;
+.accordion i {
+	color: #FED20F;
+	font-size: 18px;
+	transition: 0.5s;
 }
 
-footer {
-	background-color: rgb(70, 70, 70);
-	margin-top: 20px;
+.accordion a:hover i {
+	color: rgba(254, 210, 15, 0.6);
+	font-size: 28px;
 }
 
-.info {
-	margin: 5px;
-	flex-direction: column;
+.accordion .btn-outline-info {
+	background-color: #49cc47;
 }
 
-.info__links {
-	display: flex;
-	flex-direction: row;
-	margin: 5px;
+.modal-header i {
+	color: #FED20F;
+	font-size: 18px;
+	transition: 0.5s;
 }
 
-.info__links a {
-	margin: 10px;
-	background-color: #BBBBBB;
-	border-radius: 30px;
-	padding: 5px;
+.modal-header button:hover i {
+	color: rgba(254, 210, 15, 0.6);
+	font-size: 28px;
 }
 
-.info__links a:hover {
-	background-color: #888888;
+.modal-mapa .modal-content {
+	background-color: #7DC353;
 }
 
-.info__links img {
-	height: 30px;
-	width: 30px;
-	margin: 0;
-	padding: 0;
+@media (max-width: 1240px) and (min-width: 891px) {
+	.area-topo img {
+		height: 500px;
+	}
 }
 
-.info__creditos {
-	margin: 0px 10px 10px 10px;
-	text-align: center;
-}
-
-.info__creditos,
-.info__creditos a {
-	font-size: 16px;
-	font-weight: 500;
-	color: #BBBBBB;
-}
-
-.info__creditos a{
-	text-decoration: none;
-	color: #BBBBBB;
-}
-
-.info__creditos a:hover {
-	color: #777777;
+@media (max-width: 890px) {
+	.area-topo img {
+		height: 300px;
+		padding: 1em;
+	}
 }
